@@ -1,7 +1,7 @@
 {
   "name": "canvas-chart",
   "version": "1.0.0",
-  "description": "Takes an array of data points, makes a canvas of it and save as a PNG",
+  "description": "Takes an array of data points, makes a canvas of them and saves it as a .png image",
   "main": "index.js",
   "directories": {
     "test": "test"

@@ -1,0 +1,43 @@
+{
+  "name": "canvas-chart",
+  "version": "1.0.0",
+  "description": "Takes an array of data points, makes a canvas of it and save as a PNG",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/believer/canvas-chart.git"
+  },
+  "keywords": [
+    "canvas",
+    "chart",
+    "png"
+  ],
+  "author": "Rickard Laurin <rickard.laurin@gmail.com> (http://rickardlaurin.se/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/believer/canvas-chart/issues"
+  },
+  "homepage": "https://github.com/believer/canvas-chart",
+  "dependencies": {
+    "canvas": "^1.1.6",
+    "deepmerge": "^0.2.7",
+    "fs": "0.0.2",
+    "path": "^0.4.9"
+  },
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "gulp": "^3.8.9",
+    "gulp-jshint": "^1.8.6",
+    "gulp-mocha": "^1.1.1",
+    "gulp-plumber": "^0.6.6",
+    "proxyquire": "^1.0.1",
+    "sinon": "^1.11.1",
+    "sinon-chai": "^2.6.0"
+  }
+}

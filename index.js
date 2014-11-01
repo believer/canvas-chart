@@ -227,7 +227,7 @@ var graph = {
 function setup (opts) {
   var options = merge({
     filename: 'out',
-    height: 400,
+    height: 450,
     points: true,
     stroke: true,
     grid: true,

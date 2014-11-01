@@ -54,8 +54,12 @@ describe.only("#canvas-chart", function() {
       filename: 'public/out',
       grid: true,
       height: 450,
+      lineWidth: 3,
       points: true,
+      pointFill: '#fff',
+      pointStroke: '#000',
       stroke: true,
+      strokeColor: '#000',
       type: 'line',
       width: 800
     };
@@ -64,8 +68,12 @@ describe.only("#canvas-chart", function() {
       filename: 'public/out',
       grid: true,
       height: 450,
+      lineWidth: 3,
       points: true,
+      pointFill: '#fff',
+      pointStroke: '#000',
       stroke: true,
+      strokeColor: '#000',
       type: 'line',
       width: 800
     });
@@ -75,9 +83,13 @@ describe.only("#canvas-chart", function() {
       filename: 'public/out',
       grid: true,
       height: 1000,
+      lineWidth: 3,
       max: Math.max.apply(null, data),
       points: true,
+      pointFill: '#fff',
+      pointStroke: '#000',
       stroke: true,
+      strokeColor: '#000',
       type: 'line',
       width: 337
     });
@@ -86,9 +98,13 @@ describe.only("#canvas-chart", function() {
       filename: 'public/years',
       grid: true,
       height: 450,
+      lineWidth: 3,
       max: Math.max.apply(null, data),
       points: true,
+      pointFill: '#fff',
+      pointStroke: '#000',
       stroke: true,
+      strokeColor: '#000',
       type: 'line',
       width: 800
     });

@@ -88,11 +88,11 @@ var graph = {
 
       ctx.arc(x, y, 3, 0, 2 * Math.PI);
 
-      ctx.fillStyle = '#fff';
+      ctx.fillStyle = opts.pointFill;
       ctx.fill();
 
-      ctx.lineWidth = 3;
-      ctx.strokeStyle = "black";
+      ctx.lineWidth = opts.lineWidth;
+      ctx.strokeStyle = opts.pointStroke;
       ctx.stroke();
 
       ctx.closePath();
@@ -190,8 +190,8 @@ var graph = {
     ctx.lineTo(opts.width, 0);
 
     // Stroke
-    ctx.lineWidth = 3;
-    ctx.strokeStyle = "black";
+    ctx.lineWidth = opts.lineWidth;
+    ctx.strokeStyle = opts.strokeColor;
     ctx.stroke();
 
     // Fill
@@ -229,8 +229,12 @@ function setup (opts) {
     filename: 'public/out',
     grid: true,
     height: 450,
+    lineWidth: 3,
     points: true,
+    pointFill: '#fff',
+    pointStroke: '#000',
     stroke: true,
+    strokeColor: '#000',
     type: 'line',
     width: 800
   }, opts || {});

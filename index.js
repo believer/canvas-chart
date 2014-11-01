@@ -206,7 +206,7 @@ var graph = {
    * @param  {obj} opts - Options
    */
   write: function (canvas, opts) {
-    var out = fs.createWriteStream(path.join(path.dirname(require.main.filename),'/public/' + opts.filename + '.png'))
+    var out = fs.createWriteStream(path.join(path.dirname(require.main.filename),opts.filename + '.png'))
     , stream = canvas.pngStream();
 
     stream.on('data', function (chunk) {
@@ -226,11 +226,11 @@ var graph = {
  */
 function setup (opts) {
   var options = merge({
-    filename: 'out',
+    filename: 'public/out',
+    grid: true,
     height: 450,
     points: true,
     stroke: true,
-    grid: true,
     type: 'line',
     width: 800
   }, opts || {});

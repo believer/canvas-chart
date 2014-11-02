@@ -249,5 +249,7 @@ exports.graph = function (data, opts) {
     case 'line':
       graph.line(data, options);
       break;
+    default:
+      throw Error('Graph type ' + options.type + ' does not exist');
   }
 };

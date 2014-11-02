@@ -78,6 +78,20 @@ describe.only("#canvas-chart", function() {
       width: 800
     });
 
+    deepmerge.withArgs(opts, { type:'square' }).returns({
+      filename: 'public/out',
+      grid: true,
+      height: 450,
+      lineWidth: 3,
+      points: true,
+      pointFill: '#fff',
+      pointStroke: '#000',
+      stroke: true,
+      strokeColor: '#000',
+      type: 'square',
+      width: 800
+    });
+
     deepmerge.withArgs(opts, { height: 1000, width: 337 })
     .returns({
       filename: 'public/out',
@@ -179,6 +193,10 @@ describe.only("#canvas-chart", function() {
 
       expect(fs.createWriteStream).calledOnce.and.calledWith(gulp + 'public/years.png');
       expect(canvas.defaultBehavior.returnValue.pngStream).calledOnce;
+    });
+
+    it("should throw an error if the graph type is not implemented", function() {
+      expect(chart.graph.bind(chart, data, { type: 'square' })).to.throw('Graph type square does not exist');
     });
   });
 });

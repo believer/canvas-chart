@@ -140,7 +140,9 @@ var graph = {
 
     // Vertical lines
     dataSet.forEach(function (data, i) {
-      var x = i * xScalar * 10;
+      var x = i * xScalar;
+
+      console.log(x);
 
       ctx.moveTo(x, graph.settings.colHead);
       ctx.lineTo(x, opts.height);

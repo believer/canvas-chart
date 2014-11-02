@@ -38,4 +38,5 @@ The implemented graph types
 ```
 
 This writes a .png at public/movies.png that looks like this:
+
 ![Movies](https://raw.github.com/believer/canvas-chart/master/example/movies.png)

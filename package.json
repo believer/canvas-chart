@@ -27,7 +27,6 @@
   "dependencies": {
     "canvas": "^1.1.6",
     "deepmerge": "^0.2.7",
-    "fs": "0.0.2",
     "path": "^0.4.9"
   },
   "devDependencies": {
